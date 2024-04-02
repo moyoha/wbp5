@@ -19,23 +19,13 @@
   },
   "homepage": "https://github.com/moyoha/wbp5#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.19",
     "css-loader": "^6.10.0",
     "html-webpack-plugin": "^5.6.0",
     "mini-css-extract-plugin": "^2.8.1",
-    "postcss": "^8.4.38",
-    "postcss-loader": "^8.1.1",
     "sass": "^1.72.0",
     "sass-loader": "^14.1.1",
     "style-loader": "^3.3.4",
     "webpack": "^5.90.3",
     "webpack-cli": "^5.1.4"
-  },
-  "browserslist": [
-    "last 2 versions",
-    "> 1%",
-    "iOS 7",
-    "last 3 iOS versions",
-    "last 5 ie version"
-  ]
+  }
 }
