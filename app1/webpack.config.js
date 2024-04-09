@@ -24,6 +24,6 @@ module.exports = {
     // 所以这里需要使用 devServer 提供 http(s) server 能力
     devServer: {
         port: 8081,
-        hot: true,
+        hot: true
     },
 }
