@@ -1,6 +1,6 @@
-const path = require("path")
-const { ModuleFederationPlugin } = require("webpack").container
+const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { ModuleFederationPlugin } = require("webpack").container;
 
 module.exports = {
     mode: "development",
@@ -12,9 +12,8 @@ module.exports = {
     plugins: [
         new ModuleFederationPlugin({
             remotes: {
-                // 地址需要指向导出方生成的应用入口文件
-                RemoteApp: "app1@http://localhost:8081/dist/remoteEntry.js"
-            }
+                app1: "app1@http://localhost:8081/dist/remoteEntry.js", //cdn地址
+            },
         }),
         new HtmlWebpackPlugin(),
     ],
@@ -23,4 +22,4 @@ module.exports = {
         hot: true,
         open: true,
     }
-}
+};
